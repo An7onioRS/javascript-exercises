@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const removeFromArray = function(array, arg) {
+            let args = Array.from(arguments);
+            args.shift();
+
+            for (let i = 0; i < args.length; i++) {
+                let currentElement = args[i];
+
+                if (array.includes(currentElement)) {
+                    const index = array.indexOf(currentElement);
+                    array.splice(index, 1);
+                }
+            }
+
+            return array;
+        };
+    console.log(removeFromArray([1, 2, 3, 4], 1, 2, 3, 4));
+    </script>
+</body>
+</html>
