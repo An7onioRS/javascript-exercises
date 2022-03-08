@@ -1,6 +1,5 @@
 const palindromes = text => {
     text = text.replace(/[^a-zA-Z0-9]/g, "");
-    console.log(text);
     const arr = Array.from(text);
     const reversedArr = arr.slice().reverse(); // 1)
     const isSame = (arr.length === reversedArr.length) && (arr.every /* 2) */(function(currentElement, index) {
