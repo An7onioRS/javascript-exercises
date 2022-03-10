@@ -20,7 +20,5 @@ const fib = num => {
     return fib(num - 1) + fib(num - 2);
 };
 
-console.log(fib(15));
-
 // Do not edit below this line
 module.exports = fibonacci;
